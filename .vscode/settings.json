@@ -2,6 +2,7 @@
     "python.pythonPath": "/usr/bin/python",
     "files.associations": {
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "unordered_map": "cpp"
     }
 }
