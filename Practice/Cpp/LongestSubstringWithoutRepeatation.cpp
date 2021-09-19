@@ -5,7 +5,6 @@ class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
         vector<int> mpp(256, -1);
-
         int left = 0, right = 0;
         int n = s. size();
         int len = 0;
