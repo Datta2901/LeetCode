@@ -22,7 +22,6 @@ int main(){
         cin >> a;
         answer.push_back(a);
     }
-    
-
+    cout << obj.singleNumber(answer) << endl;
     return 0;
 }
