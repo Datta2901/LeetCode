@@ -1,3 +1,4 @@
+// O(sqrt(n))
 class Solution {
 public:
     bool isPerfectSquare(int num) {
@@ -7,6 +8,8 @@ public:
     }
 };
 
+
+// O(log(num))
 class Solution {
 public:
     bool isPerfectSquare(int num) {

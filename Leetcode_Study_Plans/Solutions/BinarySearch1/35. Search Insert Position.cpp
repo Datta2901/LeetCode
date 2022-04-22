@@ -1,3 +1,4 @@
+// (logn)
 class Solution {
 public:
     int binarySearch(vector<int>& nums,int target){

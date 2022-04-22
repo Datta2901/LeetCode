@@ -1,3 +1,4 @@
+// O(n)
 class Solution {
 public:
     int peakIndexInMountainArray(vector<int>& arr) {
@@ -7,6 +8,7 @@ public:
 };
 
 
+// O(logn)
 class Solution {
 public:
     int peakIndexInMountainArray(vector<int>& nums) {
