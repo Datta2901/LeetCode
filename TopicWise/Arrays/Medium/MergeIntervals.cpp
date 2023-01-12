@@ -1,9 +1,31 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// class Solution {
+// public:
+//     vector<vector<int> > merge(vector<vector<int> >& intervals) {
+//        vector<vector<int> > answer;
+//         sort(intervals.begin(),intervals.end());
+//         int start = intervals[0][0],end = intervals[0][1],pos = 0;
+//         for(int i = 1; i < intervals.size(); i++){
+//             if(start <= intervals[i][0] && intervals[i][0] <= end){
+//                 if(end < intervals[i][1]){
+//                     end = intervals[i][1];
+//                 }
+//             }else{
+//                 answer.push_back({start,end});
+//                 start = intervals[i][0];
+//                 end = intervals[i][1];
+//             }
+//         } 
+//         answer.push_back({start,end});
+//         return answer;
+//     }
+// };
+
 class Solution {
 public:
-    vector<vector<int> > merge(vector<vector<int> >& intervals) {
+    int merge(vector<vector<int> >& intervals) {
        vector<vector<int> > answer;
         sort(intervals.begin(),intervals.end());
         int start = intervals[0][0],end = intervals[0][1],pos = 0;
@@ -19,7 +41,7 @@ public:
             }
         } 
         answer.push_back({start,end});
-        return answer;
+        return answer.size();
     }
 };
 
@@ -29,16 +51,12 @@ int main(){
     cin >> size;
     vector<vector<int> >answer(size);
     for(int i = 0; i < size; i++){
-        int a;
-        cin >> a;
+        int a,b;
+        cin >> a >> b;
         answer[i].push_back(a);
+        answer[i].push_back(b);
     }
-    vector<vector<int> > answer = obj.merge(answer);
-    for(auto i : answer){
-        for(auto j : i){
-            cout << j << " ";
-        }
-        cout << endl;
-    }
-    return 0;
+    int a = obj.merge(answer);
+    cout << a << endl;
+    return 0; 
 }

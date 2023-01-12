@@ -2,11 +2,6 @@
 using namespace std;
 
 
-// Formula to find a rc cell in pascal triangle is
-//  r - 1 C
-//          c - 1
-
-
 class Solution {
 public:
     void rotate(vector<vector<int>>& matrix) {
